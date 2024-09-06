@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    background-image: url(https://media.istockphoto.com/id/1156263113/vector/dark-blue-background-back-to-school-concept-with-line-art-elements.jpg?s=612x612&w=0&k=20&c=tR_FRqqWgD52ZdFVzLMF5ZQ1BIeoK8ixysI_QP4AmMQ=);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.calculator {
+    background-color: #027a8a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(2, 127, 131, 0.945);
+}
+#display {
+    width: 100%;
+    height: 40px; /* Reduced height */
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 5px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0bacb8;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5a85e2;
+}
+
+.equal {
+    grid-column: span 2;
+    background-color: #0877b8;
+}
+
+.equal:hover {
+    background-color: #4eaeee;
+    
+}
+
+.history {
+    margin-top: 20px;
+    width: 300px;
+}
+
+.history h2 {
+    margin: 0;
+    text-align: center;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history-list li {
+    background-color: #ddd;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+}
